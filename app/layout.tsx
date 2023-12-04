@@ -8,6 +8,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import StarsCanvas from '@/Components/Main/StarBackground'
 import Navbar from '@/Components/Main/Navbar'
+import Footer from '@/Components/Main/Footer'
 
 
 
@@ -33,8 +34,9 @@ export default function RootLayout({
       <body className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
         <StarsCanvas />
-        <Navbar/>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )
