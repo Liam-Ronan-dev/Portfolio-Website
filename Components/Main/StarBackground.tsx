@@ -31,8 +31,8 @@ const StarBackground = (props: any) => {
 
    //Uses the useFrame hook from '@react-three/fiber' to perform actions on every frame of animation loop. this function adjusts rotation on 'ref'. it subtracts a fraction of the 'delta' value(time elapsed since last frame) from rotation in the X & Y axis. Continuous rotation effect for the object
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta/18;
-    ref.current.rotation.y -= delta/18;
+    ref.current.rotation.x -= delta/12;
+    ref.current.rotation.y -= delta/12;
   })
 
 
@@ -40,7 +40,7 @@ const StarBackground = (props: any) => {
     //Group component from three js that groups multiple objects and aplly transformations to the entire group. The 'rotation' prop is used to specify a rotation for the group. The rotation is '[0, 0, Math.PI / 4]', which is a rotation around the z-axis by an angle of  π/4 radians (45 degrees).
     <group rotation={[0,0, Math.PI / 4]}>
         {/* Three JS component for rendering point clouds. takes various props including:
-        - Ref: References the three js object, likely used to manipulate its properties
+        - Ref: References the three js object, used to manipulate its properties
         - Positions: An array of positions representing points in 3D space
         - Stride: No. of elements between each set of c-ordinates in the 'positions' array (in this case 3 for x,y,z co-ordinates) 
         - frustumCulled: A boolean indicating whether the points outside the view frustum should be culled (not rendered)*/}
@@ -59,8 +59,8 @@ const StarBackground = (props: any) => {
             - DepthWrite: Disables writing to the depth buffer */}
             <PointMaterial
                 transparent
-                color="$fff"
-                size={0.002}
+                color="#FFD700"
+                size={0.003}
                 sizeAttenuation={true}
                 depthWrite={false}
             />

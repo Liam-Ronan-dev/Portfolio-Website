@@ -2,7 +2,7 @@
 import type { Metadata } from 'next'
 
 //Importing custom font from google
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 
 //Importing CSS
 import './globals.css'
@@ -10,10 +10,11 @@ import StarsCanvas from '@/Components/Main/StarBackground'
 import Navbar from '@/Components/Main/Navbar'
 import Footer from '@/Components/Main/Footer'
 
-
-
-//Using subset Latin
-const inter = Inter({ subsets: ['latin'] })
+//Using subset Latin & weight
+const roboto = Roboto({
+  weight: '700',
+  subsets: ['latin'],
+})
 
 //Likely to be used for SEO
 export const metadata: Metadata = {
@@ -31,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
+      <body className={`${roboto.className} bg-[#0d0d0d] overflow-y-scroll overflow-x-hidden`}
       >
         <StarsCanvas />
         <Navbar />
