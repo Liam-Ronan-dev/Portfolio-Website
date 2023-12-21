@@ -1,7 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
-
-import { slideInFromTop } from "@/Utils/Motion";
 
 const Navbar = () => {
 	return (
@@ -10,20 +7,32 @@ const Navbar = () => {
 
                     <div className="w-[500px] h-full flex items-center justify-center py-16 px-4">
                         <div
-                         className="flex items-center justify-between w-full h-auto border border-1 border-[#ffffff] bg-neutral-900 px-[25px] p-[10px] rounded-md text-slate-200"
+                         className="flex items-center justify-between w-full h-auto border border-1 border-[#ffffff] px-[25px] p-[10px] rounded-lg text-slate-200"
                          >
-                            <a href="#about-me" className="cursor-pointer">
-                                Home
-                            </a>
-                            <a href="#projects" className="cursor-pointer">
-                                About
-                            </a>
-                            <a href="#skills" className="cursor-pointer">
-                                Skills
-                            </a>
-                            <a href="#contact" className="cursor-pointer">
-                                Projects
-                            </a>
+                            <div className="hover:bg-[#111111] transition duration-700 ease-in-out hover:scale-110">
+                                <a href="#hero">
+                                    Home
+                                </a>
+                            </div>
+
+                            <div className="hover:bg-[#111111] transition duration-700 ease-in-out hover:scale-110">
+                                <a href="#about" className="cursor-pointer">
+                                    About
+                                </a>
+                            </div>
+
+                            <div className="hover:bg-[#111111] transition duration-700 ease-in-out hover:scale-110">
+                                <a href="#skills" className="cursor-pointer">
+                                    Skills
+                                </a>
+                            </div>
+
+                            <div className="hover:bg-[#111111] transition duration-700 ease-in-out hover:scale-110">
+                                <a href="#projects" className="cursor-pointer">
+                                    Projects
+                                </a>
+                            </div>
+                            
                           
                         </div>
                     </div>

@@ -1,15 +1,11 @@
+import React from 'react';
 
-import React from 'react'
-
-
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
-    
-    <div className='mb-[20px] text-[24px] text-slate-300 text-center py-10'>
-            &copy; WebChain Dev 2023 Inc. All Rights Reserved
-    </div>
- 
-  )
-}
+    <footer className="flex justify-center items-center w-full h-16  text-white text-xs backdrop-blur-sm font-light bottom-0">
+      <p>&copy; 2023 Liam Ronan</p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

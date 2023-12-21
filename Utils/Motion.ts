@@ -8,13 +8,13 @@ These animation definitions can be used with the Framer Motion library to animat
 //Visible represents the final state of element after animation
 export function slideInFromLeft(delay: number) {
     return {
-      hidden: { x: -100, opacity: 0 },
+      hidden: { x: -350, opacity: 0 },
       visible: {
         x: 0,
         opacity: 1,
         transition: {
           delay: delay,
-          duration: 0.5,
+          duration: 1.5,
         },
       },
     };
@@ -22,13 +22,13 @@ export function slideInFromLeft(delay: number) {
   
   export function slideInFromRight(delay: number) {
     return {
-      hidden: { x: 100, opacity: 0 },
+      hidden: { x: 350, opacity: 0 },
       visible: {
         x: 0,
         opacity: 1,
         transition: {
           delay: delay,
-          duration: 0.5,
+          duration: 1.5,
         },
       },
     };

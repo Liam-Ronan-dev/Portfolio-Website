@@ -1,29 +1,25 @@
 
 import React from 'react'
 import ProjectCard from '../Sub/ProjectCard'
+import { projectsData } from '@/constants/data'
 
 const Projects = () => {
   return (
-    <div className='flex flex-col items-center justify-center py-10'>
-        <h1 className="text-[50px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-        My Projects
-      </h1>
-        <div className='h-full w-full flex flex-col md:flex-row gap-10 px-10'>
-            <ProjectCard 
-                src='/NextWebsite.png'
-                title='Modern Next.js Portfolio'
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque gravida orci non porttitor. Sed leo dolor, dignissim vestibulum tempus eu, aliquam et mi. Quisque cursus, purus eu ultrices sodales."
-            />
-            <ProjectCard 
-                src='/CardImage.png'
-                title='Interactive website cards'
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque gravida orci non porttitor. Sed leo dolor, dignissim vestibulum tempus eu, aliquam et mi. Quisque cursus, purus eu ultrices sodales."
-            />
-            <ProjectCard 
-                src='/SpaceWebsite.png'
-                title='Space Themed'
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque gravida orci non porttitor. Sed leo dolor, dignissim vestibulum tempus eu, aliquam et mi. Quisque cursus, purus eu ultrices sodales."
-            />
+    <div id="projects">
+        <h2 className='text-slate-200 text-5xl mb-3 text-center'>PROJECTS</h2>
+
+       	<div className='flex justify-center mb-6'>
+          <hr className='w-[100px]' />
+        </div>
+
+        <div>
+            {projectsData.map((project, index) => (
+              <React.Fragment key={index}>
+                <ProjectCard 
+                  {...project}
+                />
+              </React.Fragment>              
+            ))}
         </div>
 
     </div>
