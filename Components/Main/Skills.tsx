@@ -20,9 +20,8 @@ const Skills = () => {
 			</div>
 			<div className="flex flex-row justify-around flex-wrap gap-5 items-center">
 				{Frontend_skill.map((image, index) => (
-					<div className="hover:bg-[#111111] p-5 rounded-lg hover:scale-125 transition duration-700 ease-in-out items-center pt-4">
+					<div key={index} className="hover:bg-[#111111] p-5 rounded-lg hover:scale-125 transition duration-700 ease-in-out items-center pt-4">
 						<SkillsData
-							key={index}
 							src={image.Image}
 							width={image.width}
 							height={image.height}
@@ -33,9 +32,9 @@ const Skills = () => {
 			</div>
 			<div className="flex flex-row justify-around flex-wrap mt-8 gap-5 items-center">
 				{Backend_skill.map((image, index) => (
-					<div className="hover:bg-[#111111] p-5 rounded-lg hover:scale-125 transition duration-700 ease-in-out items-center pt-4">
+					<div key={index} className="hover:bg-[#111111] p-5 rounded-lg hover:scale-125 transition duration-700 ease-in-out items-center pt-4">
 						<SkillsData
-							key={index}
+							
 							src={image.Image}
 							width={image.width}
 							height={image.height}
@@ -46,9 +45,9 @@ const Skills = () => {
 			</div>
 			<div className="flex flex-row justify-around flex-wrap mt-8 gap-5 items-center">
 				{Full_stack.map((image, index) => (
-					<div className="hover:bg-[#111111] p-5 rounded-lg hover:scale-125 transition duration-700 ease-in-out items-center pt-4">
+					<div key={index} className="hover:bg-[#111111] p-5 rounded-lg hover:scale-125 transition duration-700 ease-in-out items-center pt-4">
 						<SkillsData
-							key={index}
+					
 							src={image.Image}
 							width={image.width}
 							height={image.height}
@@ -59,9 +58,9 @@ const Skills = () => {
 			</div>
 			<div className="flex flex-row justify-around flex-wrap mt-8 gap-5 items-center">
 				{Other_skill.map((image, index) => (
-					<div className="hover:bg-[#111111] p-5 rounded-lg hover:scale-125 transition duration-700 ease-in-out items-center pt-4">
+					<div key={index} className="hover:bg-[#111111] p-5 rounded-lg hover:scale-125 transition duration-700 ease-in-out items-center pt-4">
 						<SkillsData
-							key={index}
+							
 							src={image.Image}
 							width={image.width}
 							height={image.height}

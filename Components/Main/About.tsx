@@ -28,7 +28,7 @@ const About = () => {
 					</div>
 
 					<p>
-						Hey! I'm Liam, a full-stack software engineer from Ireland. My
+						Hey! Im Liam, a full-stack software engineer from Ireland. My
 						passion lies in crafting end-to-end solutions that seamlessly blend
 						front-end finesse with back-end robustness. As a dedicated
 						full-stack developer, I relish the opportunity to bring ideas to
@@ -37,7 +37,7 @@ const About = () => {
 
 					<div className="flex justify-evenly py-10">
 						{Socials.map((social) => (
-							<div className="hover:bg-[#111111] p-2 rounded-lg hover:scale-125 transition duration-700 ease-in-out items-center pt-4">
+							<div key={social.name} className="hover:bg-[#111111] p-2 rounded-lg hover:scale-125 transition duration-700 ease-in-out items-center pt-4">
 								<a href={social.link} target="_blank" rel="noopener noreferrer">
 									<Image
 										key={social.name}
