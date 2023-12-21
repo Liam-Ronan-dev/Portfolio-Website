@@ -1,21 +1,7 @@
 "use client";
-//Summary = In summary, @react-three/fiber is a library that integrates React and Three.js, providing components and hooks for building 3D scenes in a React application. @react-three/drei extends the capabilities of @react-three/fiber with additional components and utilities for common 3D graphics tasks. The specific components imported from @react-three/drei (Points, PointMaterial, Preload) suggest the implementation of a 3D point cloud with custom materials and preloading of assets.
-/* 
-    - useRef = React hook that provides way to create a mutable object properties
-    that persist across renders without causing re-renders when the values change 
-   - Suspense = feature that allows components to suspend rendering while waiting for some async work to complete eg: lazyLoading
-*/
+
 import React, { useState, useRef, Suspense } from "react";
-/* 
-    - Canvas = React component that sets up a Three.js WebGL Renderer inside a react Context
-    - useFrame = hook provided by @react-three/fiber allows you to perform operations in every frame of the animation loop. updates state of objects or perform other animations within the 3D Scene
-*/
 import { Canvas, useFrame } from "@react-three/fiber";
-/* 
-    - Points = Used to render point clouds in a three.js scene. Point clouds are collections of points in 3D space that can be used to represent various effects
-    - PointMaterial = allows customization of the individual points in a 'Points' component
-    - Preload = Used for preloading assets, textures, or models before rendering the main content. Ensures resources are loaded and ready to use when needed
-*/
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 // @ts-ignore
 import * as random from "maath/random/dist/maath-random.esm";
