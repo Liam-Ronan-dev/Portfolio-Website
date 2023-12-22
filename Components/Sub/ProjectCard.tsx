@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="text-white border border-white p-8 rounded-xl drop-shadow-2xl mb-16 mt-12 sm:flex sm:items-center mx-auto max-w-6xl hover:bg-[#111111] transition duration-700 ease-in-out hover:scale-105">
 
-  <div className="sm:order-2 sm:ml-6 mb-4 sm:mb-0 p-6">
+  <div className="sm:order-2 sm:ml-6 mb-4 sm:mb-0 p-6 text-slate-300">
     <a href={link} target="_blank" rel="noopener noreferrer">
       <Image className='rounded-xl' src={imageSrc} alt={`Project ${title}`} width={800} height={800} />
     </a>
@@ -36,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   <div className="sm:order-1 sm:text-left text-center p-6">
     <h3 className="text-2xl font-semibold mb-2">{title}</h3>
-    <p className="mb-4 tracking-wider text-lg">{description}</p>
+    <p className="mb-4 tracking-wider text-lg text-slate-300">{description}</p>
 
     <div className="flex flex-wrap gap-6 sm:items-center pt-4 pb-6 mb-4 text-white">
       {tags.map((tag, index) => (
