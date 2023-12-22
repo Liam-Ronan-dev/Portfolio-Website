@@ -51,7 +51,7 @@ const About = () => {
 						))}
 
 						<a
-							className="text-slate-300 w-1/4 pt-4 p-8 py-4 flex justify-center hover:scale-105 items-center transition duration-700 ease-in-out rounded-lg border border-1 border-[#ffffff] cursor-pointer hover:bg-[#111111]"
+							className="text-slate-300 w-1/4 p-4 py-4 flex justify-center hover:scale-105 items-center transition duration-700 ease-in-out rounded-lg border border-1 border-[#ffffff] cursor-pointer hover:bg-[#111111] text-md w-full sm:w-1/4"
 							href="/LiamRonanCV.pdf"
 							download={true}
 						>
