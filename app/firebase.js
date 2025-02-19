@@ -1,11 +1,12 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
+import * as dotenv from 'dotenv'
 // https://firebase.google.com/docs/web/setup#available-libraries
+
+dotenv.config()
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBX4LFVcsE4gzLnvQE4L2WULokQiYG_f48",
+  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "liam-portfolio-732d6.firebaseapp.com",
   projectId: "liam-portfolio-732d6",
   storageBucket: "liam-portfolio-732d6.appspot.com",

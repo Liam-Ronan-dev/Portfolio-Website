@@ -3,6 +3,11 @@
  */
 const nextConfig = {
     /* config options here */
+    images: {
+
+      unoptimized : true
+      
+      }
   }
    
   module.exports = nextConfig
