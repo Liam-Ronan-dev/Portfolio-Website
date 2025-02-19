@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 
 //Importing CSS
-import './globals.css';
+import './globals.css'
 import StarsCanvas from '@/Components/Main/StarBackground';
 import Navbar from '@/Components/Main/Navbar';
 import Footer from '@/Components/Main/Footer';
